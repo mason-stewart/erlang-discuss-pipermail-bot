@@ -1,7 +1,7 @@
 {
-  "name": "pipermail-bot",
-  "version": "3.2.5",
-  "description": "The esdiscuss bot",
+  "name": "erlang-pipermail-bot",
+  "version": "3.2.5-16",
+  "description": "The erlang-discuss bot",
   "main": "index.js",
   "bin": "bin/cmd.js",
   "scripts": {
@@ -12,19 +12,23 @@
     "type": "git",
     "url": "https://github.com/esdiscuss/bot.git"
   },
-  "author": "ForbesLindesay",
+  "authors": [
+    "ForbesLindesay",
+    "Mason Stewart"
+  ],
   "license": "MIT",
   "dependencies": {
-    "pipermail": "~3.1.0",
-    "mongojs": "~0.9.6",
-    "slugg": "~0.1.2",
     "barrage": "1.0.0",
+    "mongojs": "~0.9.6",
     "ms": "~0.6.1",
+    "pipermail": "git://github.com/masondesu/pipermail",
     "promise": "~3.2.0",
-    "raven": "~0.6.2"
+    "raven": "~0.6.2",
+    "slugg": "~0.1.2"
   },
   "host": "bot.esdiscuss.org",
   "engines": {
     "node": "0.10.x"
-  }
+  },
+  "subdomain": "erlang-discuss-bot"
 }
